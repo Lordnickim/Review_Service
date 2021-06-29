@@ -26,8 +26,6 @@
     "fastify-cli": "^2.13.0",
     "fastify-plugin": "^3.0.0",
     "knex": "^0.95.6",
-    "mongodb": "^3.6.9",
-    "mongoose": "^5.12.14",
     "nodemon": "^2.0.7",
     "pg": "^8.6.0",
     "postgres": "^1.0.2"
