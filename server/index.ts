@@ -8,7 +8,7 @@ const fastify = require('fastify')({
   },
 });
 const fp: FastifyRegister = require('fastify-plugin');
-const db: Knex = require('./db');
+const db: Knex = require('./db/index');
 const Reviews = require('./reviews/service');
 
 async function decorateFastifyInstance(): Promise<void> {

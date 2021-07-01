@@ -6,3 +6,4 @@ schema2.sql
 CSV
 databases
 server/db/index.ts
+*.cer
