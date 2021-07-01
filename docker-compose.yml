@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  service:
+    build: .
+    depends_on:
+      - 'database'
+    ports:
+      - '3000:3000'
+
+  database:
+    image: postgres:13.3
+    container_name: pg_docker
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: atelier
+    ports:
+        - '5432:5432'
+    volumes:
+        - ./postgres-data:/var/lib/postgresql/data
+
+  volumes:
+    postgres-data:
